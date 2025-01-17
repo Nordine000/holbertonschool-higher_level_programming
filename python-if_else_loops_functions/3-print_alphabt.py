@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-print("".join("{}".format(chr(letter)) for letter in range(97, 123) if letter not in (101, 113)), end="")
+for alpha in range(97, 123):
+    if alpha != 101 and alpha != 113:
+        print("{:c}".format(alpha), end='')
