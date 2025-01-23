@@ -2,7 +2,7 @@
 def no_c(my_string):
     po = ''
     for i in my_string:
-        if i != 'C' and i != 'c':
+        if i not in ('C','c'):
         po += i
 
         return po
