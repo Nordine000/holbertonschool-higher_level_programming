@@ -1,14 +1,10 @@
 #!/usr/bin/python3
-"""
-    Une classe utilisée pour représenter un caé
+"""Square generation module for Python project 0x06
 """
 
 
 class Square:
+    """class defined for square generation
     """
-    class defined for square generation
-    """
-    pass
-
-def my_square(self, size):
-   return self.__size
+    def __init__(self, size):
+        self.__size = size
