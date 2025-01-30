@@ -11,4 +11,4 @@ class Square:
     pass
 
 def my_square(self, size):
-   self.__size = size
+   return self.__size
