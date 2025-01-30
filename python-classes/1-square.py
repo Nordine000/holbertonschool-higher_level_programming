@@ -4,7 +4,6 @@
 """
 
 
-
 class Square:
     """
     class defined for square generation
