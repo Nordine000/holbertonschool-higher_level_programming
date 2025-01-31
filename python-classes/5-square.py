@@ -11,7 +11,8 @@ The Square class includes:
 - A method to print the square with the character #.
 """
 class Square:
-    """Defines the Square"""
+    """class defined for square generation
+    """
     def __init__(self, size=0):
         self.__size = size
 
