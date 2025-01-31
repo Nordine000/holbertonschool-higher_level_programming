@@ -1,27 +1,45 @@
 #!/usr/bin/python3
 """
-This module defines a class Square that represents a square.
+    A class to represent a square.
+    Attributes:
+    size : int
+        The size of the square (default is 0).
 
-The Square class includes:
-- A private instance attribute `__size` to store the size of the square.
-- A constructor to initialize the size with validation.
-- A property to retrieve the size.
-- A property setter to set the size with validation.
-- A method to calculate the area of the square.
-- A method to print the square with the character #.
+    Methods:
+    area():
+        Returns the current square area.
+    my_print():
+        Prints the square with the character '#'.
 """
+
+
 class Square:
-    """class defined for square generation
-    """
+    """kill the coms"""
     def __init__(self, size=0):
         self.size = size
- @property
+
+    @property
     def size(self):
         """Gets the size of the square."""
         return self.__size
 
     @size.setter
     def size(self, value):
+        """
+        Sets the size of the square.
+
+        Parameters:
+        -----------
+        value : int
+            The new size of the square.
+
+        Raises:
+        -------
+        TypeError:
+            If value is not an integer.
+        ValueError:
+            If value is less than 0.
+        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
@@ -29,11 +47,13 @@ class Square:
         self.__size = value
 
     def area(self):
+        """Calculates and returns the area of the square."""
         return self.__size * self.__size
 
     def my_print(self):
+        """Prints the square using the '#' character."""
         if self.__size == 0:
             print("")
             return
         for _ in range(self.__size):
-            print("#" * self.__size
+            print("#" * self.__si
