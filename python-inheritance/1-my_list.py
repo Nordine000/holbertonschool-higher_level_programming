@@ -1,4 +1,11 @@
 #!/usr/bin/python3
-def lookup(obj):
-    """Returns the list of available attributes and methods of an object."""
-    return dir(list)
+"""
+Ce fichier d√©finit la classe MyList.
+"""
+
+class Myclass:
+    pass
+
+    def print_sorted(self):
+    """ Imprime une liste en int de fa√on ascendant(en ordre croissant)"""
+        print (sorted(self))
