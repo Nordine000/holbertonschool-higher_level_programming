@@ -3,7 +3,7 @@
 Ce fichier définit la classe MyList.
 """
 
-class Myclass:
+class MyList(list):
     """
     A subclass of list that includes a method to print the list
     in sorted order.
