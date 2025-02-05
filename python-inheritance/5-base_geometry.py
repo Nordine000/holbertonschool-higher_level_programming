@@ -9,13 +9,3 @@ class BaseGeometry:
     Une classe de base pour la géométr
     """
     pass
-
-    """
-    Creation d'objet
-    """
-
-bg = BaseGeometry()
-
-print(bg)
-print(dir(bg))
-print(dir(BaseGeometry))
