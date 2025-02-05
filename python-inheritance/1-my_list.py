@@ -4,8 +4,10 @@ Ce fichier d√©finit la classe MyList.
 """
 
 class Myclass:
-    pass
+    """
+    A subclass of list that includes a method to print the list
+    in sorted order.
+    """
 
     def print_sorted(self):
-    """ Imprime une liste en int de fa√on ascendant(en ordre croissant)"""
         print (sorted(self))
