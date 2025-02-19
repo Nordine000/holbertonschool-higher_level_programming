@@ -2,7 +2,6 @@
 """Module defining a Student class"""
 
 
-
 class Student:
     """Defines students informations"""
     def __init__(self, first_name, last_name, age):
