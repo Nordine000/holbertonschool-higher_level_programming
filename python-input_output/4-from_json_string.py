@@ -9,6 +9,7 @@ import json
 import json to be use later
 """
 
+
 def from_json_string(my_str):
     """
     use of json.loads() to convert obj to JSON string
