@@ -22,4 +22,5 @@ def load_and_deserialize(filename):
     """
     with open(filename, "rb") as f:
         deserialized_dict = pickle.load(f)
+        return deserialized_dict
     pass
