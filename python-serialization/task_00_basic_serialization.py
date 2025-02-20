@@ -11,7 +11,7 @@ def serialize_and_save_to_file(data, filename):
     """
     Sérialise les données et les sauvegarde dans unichier
     """
-    with open(filename, 'wb', encoding="utf-8") as f:
+    with open(filename, 'w', encoding="utf-8") as f:
         json.dump(data, f)
 
 
@@ -19,6 +19,6 @@ def load_and_deserialize(filename):
     """
     desérialise les données et les sauvegarde da un fichi
     """
-    with open(filename, "rb") as f:
+    with open(filename, 'r') as f:
         data = json.load(f)
         return data
