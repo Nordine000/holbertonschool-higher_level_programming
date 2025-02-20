@@ -13,7 +13,6 @@ def serialize_and_save_to_file(data, filename):
     """
     with open(filename, 'wb') as fichier:
         pickle.dump(data, fichier)
-    pass
 
 
 def load_and_deserialize(filename):
@@ -23,4 +22,3 @@ def load_and_deserialize(filename):
     with open(filename, "rb") as f:
         deserialized_dict = pickle.load(f)
         return deserialized_dict
-    pass
