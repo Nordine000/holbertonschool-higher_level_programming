@@ -1,2 +1,2 @@
---Imprime la description en liste
+-- Imprime la description en liste
 SHOW CREATE TABLE first_table;
