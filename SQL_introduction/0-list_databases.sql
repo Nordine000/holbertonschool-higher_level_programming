@@ -1,4 +1,2 @@
---Repertorie toute les base de donnes
-
-
+-- Repertorie toute les base de donnes
 SHOW DATABASES;
