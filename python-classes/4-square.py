@@ -15,10 +15,25 @@ class Square():
 
     @property
     def size(self):
+        """
+         Obtention de l'attribut size.
+
+        Retourne :
+            int : la taille du carré.
+        """
         return self.__size
 
     @size.setter
     def size(self, value):
+        """Paramètre pour l'attribut size avec validation.
+
+        Args :
+            value (int) : La nouvelle valeur de la taille.
+
+        L'erreur est levée :
+            TypeError : Si size n'est pas un entier.
+            ValueError : Si la taille est inférieure à 0.
+        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
