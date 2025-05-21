@@ -18,7 +18,6 @@ class Square():
             int : la taille du carré.
         """
         return self.__size
-    
 
     @size.setter
     def size(self, value):
