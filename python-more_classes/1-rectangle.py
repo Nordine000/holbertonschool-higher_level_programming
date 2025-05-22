@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 """
-Ce module définit une classe Rectangle avec des attributs de largeur et de hauteur,
-y compris la validation de la définition de ces valeurs.
+définit une classe Rectangle avec des attributs de largeur et de hauteur
 """
 
 
 class Rectangle():
     """Définit un rectangle par sa largeur et sa hauteur"""
-    
     def __init__(self, width=0, height=0):
         """Initialiser le rectangle avec la largeur et la hauteur"""
         self.__width = width
@@ -17,7 +15,7 @@ class Rectangle():
     def width(self):
         """Récupérer la largeur"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """Définir la largeur avec validation"""
@@ -31,7 +29,7 @@ class Rectangle():
     def height(self):
         """Récupérer la hauteur"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """Fixer la hauteur avec validation"""
