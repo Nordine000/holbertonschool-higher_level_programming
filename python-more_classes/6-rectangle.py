@@ -65,3 +65,4 @@ class Rectangle():
     def __del__(self):
         """imprime une meessage lorsqu'une instance de rectangle est sup"""
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
