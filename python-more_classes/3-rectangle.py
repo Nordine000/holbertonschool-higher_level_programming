@@ -55,6 +55,8 @@ class Rectangle():
             return ""
         return "\n".join(["#" * self.__width] * self.__height)
 
-    def __repr__(self):
-        """Retourne rectangle sous forme de chaîne de caractères"""
-        return f"Rectangle({self.width}, {self.height})"
+""" 
+   def __repr__(self):
+        Retourne rectangle sous forme de chaîne de caractères
+        return f"Rectangle({self.width}, {self.height})
+        """
