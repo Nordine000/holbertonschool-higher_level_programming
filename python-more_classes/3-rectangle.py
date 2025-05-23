@@ -57,4 +57,4 @@ class Rectangle():
 
     def __repr__(self):
         """Retourne rectangle sous forme de chaîne de caractères"""
-        return f"Rectangle({self.__width}, {self.__height})"
+        return f"Rectangle({self.width}, {self.height})"
