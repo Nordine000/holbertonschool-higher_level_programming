@@ -58,3 +58,7 @@ class Rectangle():
     def __repr__(self):
         """Retourne rectangle sous forme de chaîne de caractères"""
         return f"Rectangle({self.width}, {self.height})"
+    
+    def __del__(self):
+        """imprime une meessage lorsqu'une instance de rectangle est sup"""
+        print("Bye rectangle...")
