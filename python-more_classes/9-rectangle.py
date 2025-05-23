@@ -6,6 +6,10 @@ définit une classe Rectangle avec des attributs de largeur et de hauteur
 
 class Rectangle():
     """Définit un rectangle par sa largeur et sa hauteur"""
+
+    number_of_instances = 0
+    print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         """Initialiser le rectangle avec la largeur et la hauteur"""
         self.width = width
