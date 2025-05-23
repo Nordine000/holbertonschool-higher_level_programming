@@ -58,7 +58,7 @@ class Rectangle():
         """Renvoie chaîne de caractères du rectangle en utilisant #"""
         if self.__width == 0 or self.__height == 0:
             return ""
-        return "\n".join(["#" * self.__width] * self.__height)
+        return "\n".join([str(self.print_symbol) * self.width] * self.height)
 
     def __repr__(self):
         """Retourne rectangle sous forme de chaîne de caractères"""
@@ -67,3 +67,4 @@ class Rectangle():
     def __del__(self):
         """imprime une meessage lorsqu'une instance de rectangle est sup"""
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
