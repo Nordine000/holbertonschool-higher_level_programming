@@ -4,7 +4,7 @@ Creation de classe basegeometry vide avec message
 """
 
 
-class BaseGeometry():
+class BaseGeometry:
     """
     Classe baseGeometrie
     """
