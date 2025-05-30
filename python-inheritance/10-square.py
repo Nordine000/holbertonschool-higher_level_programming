@@ -10,7 +10,6 @@ class Square(Rectangle):
     """
     Square class that inherits from Rectangle.
     """
-
     def __init__(self, size):
         """
         Initialise une instance Square.
@@ -29,4 +28,4 @@ class Square(Rectangle):
         """
         Calcule l'aire du carré.
         """
-        return self.__size * 2
+        return self.__size ** 2
