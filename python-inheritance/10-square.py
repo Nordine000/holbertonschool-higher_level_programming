@@ -4,9 +4,6 @@ Fonction de creation de la classe Square héritant de Rectangle.
 """
 
 Rectangle = __import__('9-rectangle').Rectangle
-"""
-import de rectangle dans le fichier 9
-"""
 
 
 class Square(Rectangle):
@@ -29,4 +26,4 @@ class Square(Rectangle):
         """
         Calcule l'aire du carré.
         """
-        return self.__size * self.__size
+        return self.__size * 2
