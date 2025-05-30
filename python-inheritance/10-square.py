@@ -25,12 +25,6 @@ class Square(Rectangle):
         super().__init__(size, size)
         self.__size = size
 
-    def __str__(self):
-        """
-        Returns the string representation of the Square.
-        """
-        return "[Rectangle] {}/{}".format(self.__size, self.__size)
-
     def area(self):
         """
         Calcule l'aire du carré.
