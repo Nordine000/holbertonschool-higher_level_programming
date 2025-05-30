@@ -17,7 +17,7 @@ class BaseGeometry:
         """
         raise Exception("area() is not implemented")
 
-    def integer_validator(self, name, value):
+    def integer_validator(self, name=None, value=None):
         """Valide que 'value' est un entier strictement positif.
 
         Arguments:
@@ -29,7 +29,9 @@ class BaseGeometry:
         - ValueError : si 'value' est inférieur ou égal à 0.
         """
 
-        if type(value) is not int:
-            raise TypeError("{:s} must be an integer".format(name))
+        if isinstance(value, bool):
+            raise TypeError(f"{name} must be an integer")
+        if not isinstance(value, int):
+            raise TypeError(f"{name} must be an integer")
         if value <= 0:
-            raise ValueError("{:s} must be greater than 0".format(name))
+            raise ValueError(f"{name} must be greater than 0")
