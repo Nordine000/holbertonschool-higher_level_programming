@@ -24,11 +24,11 @@ class Square(Rectangle):
         self.__size = size
         super().__init__(size, size)
 
-        def __str__(self):
-            return f"[Square] {self.__size}/{self.__size}"
-
     def area(self):
         """
         Calcule l'aire du carré.
         """
         return self.__size ** 2
+
+    def __str__(self):
+        return f"[Square] {self.__size}/{self.__size}"
