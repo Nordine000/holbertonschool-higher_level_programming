@@ -22,8 +22,8 @@ class Square(Rectangle):
         Super() fait en sorte que sqaure herite biend des attributs rectangle
         """
         self.integer_validator("size", size)
-        super().__init__(size, size)
         self.__size = size
+        super().__init__(size, size)
 
     def area(self):
         """
