@@ -7,4 +7,9 @@ def read_file(filename=""):
     ouvre le fichier filename
     """
     with open(filename, "r", encoding='utf-8') as f:
+        """
+        ouvre le fciheir filename et l'imprime et le lis
+        """
         print(f.read())
+
+        f.closed
