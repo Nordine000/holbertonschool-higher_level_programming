@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ def qui ecrit une chaine dans un fcihier texte et return le nbre de char ecrit"""
+
+
 def write_file(filename="", text=""):
     """
     ouvre un fichier et ecris a l'interieur
