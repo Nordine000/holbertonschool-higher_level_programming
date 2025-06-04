@@ -11,5 +11,3 @@ def read_file(filename=""):
         ouvre le fciheir filename et l'imprime et le lis
         """
         print(f.read())
-
-        f.closed
