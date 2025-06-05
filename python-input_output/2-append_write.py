@@ -6,5 +6,9 @@ et renvoie le nombre de caractere
 
 
 def append_write(filename="", text=""):
+    """
+    ajoute du texte en fin de fichier
+    et renvoie le nbre de char
+    """
     with open(filename, "a", encoding="utf8") as f:
         return f.write(text)
