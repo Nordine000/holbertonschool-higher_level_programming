@@ -16,5 +16,5 @@ try:
 except FileNotFoundError:
     listes = []
 
-    listes.extend(sys.argv[1:])
-    save_to_json_file(listes, file)
+listes.extend(sys.argv[1:])
+save_to_json_file(listes, file)
