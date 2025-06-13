@@ -17,4 +17,10 @@ def fetch_and_save_posts():
     if rep.status_code == 200:
         imp = rep.json()
         formjson = [{"id": p["id"], "title": p["title"], "body": p["body"]} for p in imp]
-
+        
+        
+        with open("posts.csv", "w", newline="", encoding="utf-8") as file:
+            fieldofnames = ["id", "title", "body"]
+            writer = csv.DictWriter(file, fieldnames=fieldofnames)
+            writer.writeheader()
+            writer.writerows(formjson)
