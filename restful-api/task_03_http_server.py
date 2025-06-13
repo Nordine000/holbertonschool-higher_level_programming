@@ -35,6 +35,6 @@ class My_server(http.server.BaseHTTPRequestHandler):
             self.wfile.write(b"Endpoint not found")
 
 
-httpd = http.server.HTTPServer(('localhost', 8000), SimpleAPIHandler)
+httpd = http.server.HTTPServer(('localhost', 8000), My_server)
 print(f"Serving on port {8000}")
 httpd.serve_forever()
