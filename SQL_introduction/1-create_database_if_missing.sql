@@ -1,2 +1,2 @@
--- Liste toutes les bases de données du serveur MySQL
-CREATE DATABASES;
+-- cree une database si hbtn n'existe pas
+CREATE DATABASES IF NOT EXISTS hbtn_0c_0;
