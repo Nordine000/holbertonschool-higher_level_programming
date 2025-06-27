@@ -1,18 +1,7 @@
 --script qui liste toutes les séries de genre Comédie dans la base de données hbtn_0d_tvshows
-SELECT
-SELECT
-    title
-FROM
-    tv_shows AS t
-INNER JOIN
-    tv_show_genres AS m
-ON
-    t.id = m.show_id
-INNER JOIN
-    tv_genres AS g
-ON
-    m.genre_id = g.id
-WHERE
-    g.name = 'Comedy'
-ORDER BY
-    title ASC;
+SELECT t.title
+FROM tv_shows AS t, tv_show_genres AS m, tv_genres AS g
+WHERE t.id = m.show_id
+  AND g.id = m.genre_id
+  AND g.name = 'Comedy'
+ORDER BY t.title ASC;
