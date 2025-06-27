@@ -1,4 +1,5 @@
--- A script that lists all the cities of California that can be found in the database hbtn_0d_usa.
+-- liste toutes les villes de Californie présentes dans la base de données hbtn_0d_usa
+iste toutes les villes de Californie présentes dans la base de données hbtn_0d_usa
 SELECT id, name FROM cities 
 WHERE state_id IN (
     SELECT id FROM states
